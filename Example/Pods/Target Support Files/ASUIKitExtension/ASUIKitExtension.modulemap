@@ -1,0 +1,6 @@
+framework module ASUIKitExtension {
+  umbrella header "ASUIKitExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - ASUIKitExtension (0.1.0)
+
+DEPENDENCIES:
+  - ASUIKitExtension (from `../`)
+
+EXTERNAL SOURCES:
+  ASUIKitExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ASUIKitExtension: 4be27cf2202481e4e164eec35212a44d37c4c970
+
+PODFILE CHECKSUM: d87d9558a8c53963851bcee7e57a3d733c6b9273
+
+COCOAPODS: 1.11.2
