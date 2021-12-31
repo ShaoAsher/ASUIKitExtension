@@ -8,7 +8,7 @@
 import UIKit
 
 // MARK: - === 视图扩展  ====
-extension UIView{
+ extension UIView{
     
     /// 添加圆角
     /// - Parameters:
@@ -25,7 +25,7 @@ extension UIView{
     /// - Parameters:
     ///   - conrners: [] 位置数组
     ///   - radius: 圆角半径
-    func AS_addCornerRadius(conrners: UIRectCorner , radius: CGFloat) {
+    public func AS_addCornerRadius(conrners: UIRectCorner , radius: CGFloat) {
         ///延迟调用
         DispatchQueue.main.asyncAfter(deadline: .now()+0.01) {
             
@@ -59,7 +59,7 @@ extension UIView{
     ///   - startPoint: 开始点
     ///   - endPoint: 结束点
     /// - Returns:
-    func AS_addCAGradientLayerColor(colors:[CGColor],startPoint:CGPoint,endPoint:CGPoint) -> Void {
+    public func AS_addCAGradientLayerColor(colors:[CGColor],startPoint:CGPoint,endPoint:CGPoint) -> Void {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
             
@@ -81,7 +81,7 @@ extension UIView{
     ///   - shadowOpacity: 阴影不透明度
     ///   - shadowRadius: 阴影半径
     ///   - shadowOffset: 阴影偏移量
-    func AS_addShadow(shadowColor:UIColor,shadowOpacity:CGFloat,shadowRadius:CGFloat,shadowOffset:CGSize){
+    public func AS_addShadow(shadowColor:UIColor,shadowOpacity:CGFloat,shadowRadius:CGFloat,shadowOffset:CGSize){
         self.layer.shadowColor = shadowColor.cgColor
         self.layer.shadowOffset = shadowOffset
         self.layer.shadowRadius = shadowRadius
@@ -91,7 +91,7 @@ extension UIView{
     
     /// 获取当前 某个视图在屏幕上的 xy
     /// - Returns: 坐标点
-    func AS_PositionInScreen() -> CGPoint {
+    public func AS_PositionInScreen() -> CGPoint {
         /// 先判断是否有父视图，如果没有父视图，直接返回视图的位置就行
         if let superView = self.superview {
             /**
@@ -124,7 +124,7 @@ extension UIView{
     
     /// 获取当前View所属的控制器
     /// - Returns: 控制器
-    func AS_Nextresponsder()->UIViewController{
+    public func AS_Nextresponsder()->UIViewController{
         
         var vc:UIResponder = self
         while (vc is UIViewController) != true {

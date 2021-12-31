@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ASUIKitExtension'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = '常用框架和iOS常用工具方法'
 
 # This description is used to generate tags and improve search results.
